@@ -25,10 +25,7 @@ body {
   .header {
     @apply flex justify-between w-full gap-36 h-max bg-blue-secondary px-52 py-24;
   }
-}
-
-@layer utilities {
-  .underline::after {
-    border-bottom: yellow;
+  .underline-yellow {
+    @apply relative after:h-[30%] z-50 after:bg-[#fdd5a1] after:w-full after:absolute after:left-1 after:top-[70%] after:-z-10;
   }
 }
